@@ -1,0 +1,10 @@
+10:42:45 **** Build of configuration Debug for project lcd_try ****
+make -j8 all 
+arm-none-eabi-size  lcd_try.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11816	     76	   1724	  13616	   3530	lcd_try.elf
+Finished building: default.size.stdout
+ 
+
+10:42:45 Build Finished. 0 errors, 0 warnings. (took 242ms)
+

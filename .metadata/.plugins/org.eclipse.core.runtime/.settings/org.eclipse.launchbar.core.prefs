@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:prog_test2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:play_song Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_try Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:lcd_try Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:voltage_acquisition_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ldr_adc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:keyboard Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IR_Transmit Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IR_transmit_char Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IR_Transmit_and_Receive Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IR_Transmit\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:IR_Transmit\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_try\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_try\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:play_song\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:play_song\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:prog_test2\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:prog_test2\ Debug/activeLaunchTarget=null\:---

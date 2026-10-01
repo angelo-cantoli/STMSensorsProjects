@@ -1,0 +1,10 @@
+10:42:45 **** Build of configuration Debug for project keyboard ****
+make -j8 all 
+arm-none-eabi-size  keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18924	    108	   2180	  21212	   52dc	keyboard.elf
+Finished building: default.size.stdout
+ 
+
+10:42:45 Build Finished. 0 errors, 0 warnings. (took 308ms)
+

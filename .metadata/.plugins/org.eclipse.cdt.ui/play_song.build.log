@@ -1,0 +1,10 @@
+10:42:50 **** Build of configuration Debug for project play_song ****
+make -j8 all 
+arm-none-eabi-size  play_song.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13640	    216	   1816	  15672	   3d38	play_song.elf
+Finished building: default.size.stdout
+ 
+
+10:42:50 Build Finished. 0 errors, 0 warnings. (took 249ms)
+

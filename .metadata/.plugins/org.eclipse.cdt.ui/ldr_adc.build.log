@@ -1,0 +1,40 @@
+10:42:46 **** Build of configuration Debug for project ldr_adc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:86:48: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_DMA' differ in signedness [-Wpointer-sign]
+   86 |                 HAL_UART_Transmit_DMA(&huart2, string, length);
+      |                                                ^~~~~~
+      |                                                |
+      |                                                char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:749:83: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  749 | HAL_StatusTypeDef HAL_UART_Transmit_DMA(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                    ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:132:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  132 |   HAL_ADC_Start_DMA(&hadc1, buffer_adc, BUF_SIZE);
+      |                             ^~~~~~~~~~
+      |                             |
+      |                             uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:295:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:594:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+  594 | HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                                              ~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "ldr_adc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\ldr_adc\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ldr_adc.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ldr_adc.elf
+ 
+arm-none-eabi-size  ldr_adc.elf 
+arm-none-eabi-objdump -h -S ldr_adc.elf  > "ldr_adc.list"
+   text	   data	    bss	    dec	    hex	filename
+  33808	    468	   4396	  38672	   9710	ldr_adc.elf
+Finished building: default.size.stdout
+ 
+Finished building: ldr_adc.list
+ 
+
+10:42:47 Build Finished. 0 errors, 2 warnings. (took 1s.804ms)
+

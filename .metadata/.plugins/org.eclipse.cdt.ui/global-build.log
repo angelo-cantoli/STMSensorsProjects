@@ -1,0 +1,219 @@
+12:24:00 **** Incremental Build of configuration Debug for project IR_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "IR_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Receive.elf
+ 
+arm-none-eabi-size  IR_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Receive.elf  > "IR_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  12232	     52	   1748	  14032	   36d0	IR_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Receive.list
+ 
+12:08:43 **** Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18444	     72	   1952	  20468	   4ff4	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:12:39 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18332	     72	   1952	  20356	   4f84	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:14:02 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:246:37: warning: passing argument 1 of 'strlen' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  246 |                 length_lcd = strlen(string_lcd);
+      |                                     ^~~~~~~~~~
+In file included from ../Core/Src/main.c:25:
+C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344\tools\bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'volatile char *'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:328:40: error: 'string' undeclared (first use in this function); did you mean 'stdin'?
+  328 |                   strcpy(temp_string, (string) string_lcd);
+      |                                        ^~~~~~
+      |                                        stdin
+../Core/Src/main.c:328:40: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:328:47: error: expected ')' before 'string_lcd'
+  328 |                   strcpy(temp_string, (string) string_lcd);
+      |                         ~                     ^~~~~~~~~~~
+      |                                               )
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:14:37 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:246:39: error: expected expression before 'char'
+  246 |                 length_lcd = strlen((*char) string_lcd);
+      |                                       ^~~~
+../Core/Src/main.c:246:44: error: expected ')' before 'string_lcd'
+  246 |                 length_lcd = strlen((*char) string_lcd);
+      |                                    ~       ^~~~~~~~~~~
+      |                                            )
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:328:41: error: expected expression before 'char'
+  328 |                   strcpy(temp_string, (*char) string_lcd);
+      |                                         ^~~~
+../Core/Src/main.c:328:46: error: expected ')' before 'string_lcd'
+  328 |                   strcpy(temp_string, (*char) string_lcd);
+      |                         ~                    ^~~~~~~~~~~
+      |                                              )
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:15:01 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18332	     72	   1952	  20356	   4f84	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:21:12 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18332	     72	   1952	  20356	   4f84	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:22:15 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:329:31: warning: passing argument 1 of 'lcd_println' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  329 |                   lcd_println(string_lcd, 0);
+      |                               ^~~~~~~~~~
+In file included from ../Core/Src/main.c:26:
+../Core/Inc/PMDB16_LCD.h:52:18: note: expected 'char *' but argument is of type 'volatile char *'
+   52 | void lcd_println(char*, uint8_t);
+      |                  ^~~~~
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18300	     72	   1952	  20324	   4f64	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:29:36 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:258:29: warning: passing argument 1 of 'lcd_println' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  258 |                 lcd_println(string_lcd, 0);
+      |                             ^~~~~~~~~~
+In file included from ../Core/Src/main.c:26:
+../Core/Inc/PMDB16_LCD.h:52:18: note: expected 'char *' but argument is of type 'volatile char *'
+   52 | void lcd_println(char*, uint8_t);
+      |                  ^~~~~
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18232	     72	   1952	  20256	   4f20	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:32:12 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18212	     72	   1952	  20236	   4f0c	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:33:26 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18324	     72	   1952	  20348	   4f7c	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 
+12:34:30 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:243:6: error: conflicting types for 'HAL_UARTEx_RxEventCallback'; have 'void(UART_HandleTypeDef *)' {aka 'void(struct __UART_HandleTypeDef *)'}
+  243 | void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart ){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:780:6: note: previous declaration of 'HAL_UARTEx_RxEventCallback' with type 'void(UART_HandleTypeDef *, uint16_t)' {aka 'void(struct __UART_HandleTypeDef *, short unsigned int)'}
+  780 | void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:35:52 **** Incremental Build of configuration Debug for project IR_Transmit_and_Receive ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit_and_Receive.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit_and_Receive\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit_and_Receive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit_and_Receive.elf
+ 
+arm-none-eabi-size  IR_Transmit_and_Receive.elf 
+arm-none-eabi-objdump -h -S IR_Transmit_and_Receive.elf  > "IR_Transmit_and_Receive.list"
+   text	   data	    bss	    dec	    hex	filename
+  18324	     72	   1952	  20348	   4f7c	IR_Transmit_and_Receive.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit_and_Receive.list
+ 

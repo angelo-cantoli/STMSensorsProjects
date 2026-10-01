@@ -1,0 +1,17 @@
+12:09:30 **** Incremental Build of configuration Debug for project IR_Transmit ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "IR_Transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\angel\STM32CubeIDE\workspace_1.19.0\IR_Transmit\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IR_Transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: IR_Transmit.elf
+ 
+arm-none-eabi-size  IR_Transmit.elf 
+arm-none-eabi-objdump -h -S IR_Transmit.elf  > "IR_Transmit.list"
+   text	   data	    bss	    dec	    hex	filename
+  14136	     32	   1920	  16088	   3ed8	IR_Transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: IR_Transmit.list
+ 
+
+12:09:31 Build Finished. 0 errors, 0 warnings. (took 712ms)
+

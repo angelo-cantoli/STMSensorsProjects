@@ -1,0 +1,10 @@
+10:42:39 **** Build of configuration Debug for project IR_transmit_char ****
+make -j8 all 
+arm-none-eabi-size  IR_transmit_char.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13124	     32	   1792	  14948	   3a64	IR_transmit_char.elf
+Finished building: default.size.stdout
+ 
+
+10:42:39 Build Finished. 0 errors, 0 warnings. (took 242ms)
+
